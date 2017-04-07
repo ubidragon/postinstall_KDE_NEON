@@ -1,0 +1,20 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=inode/directory;
+X-KDE-Priority=TopLevel
+X-KDE-Submenu=&Root Actions
+Actions=openRootDolphin;openRootTerminal;
+X-KDE-AuthorizeAction=shell_access
+
+[Desktop Action openRootDolphin]
+Name=Open Root Dolphin
+TryExec=kdesudo
+Exec=kdesudo dolphin %U
+Icon=folder-red
+
+[Desktop Action openRootTerminal]
+Name=Open Root Terminal
+TryExec=kdesudo
+Exec=kdesudo konsole %U
+Icon=folder-red
