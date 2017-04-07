@@ -62,7 +62,7 @@ cd ~/Downloads/
 
 #install gitkraken
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
-sudo gdebi -n keybase_amd64.deb
+sudo gdebi -n gitkraken-amd64.deb
 cd ~/Downloads/
 
 #install calibre ebook manager
@@ -96,6 +96,8 @@ cd ~/Downloads/
 #sudo apt install g++ cmake extra-cmake-modules qtdeclarative5-dev libqt5x11extras5-dev libkf5iconthemes-dev libkf5plasma-dev libkf5windowsystem-dev libkf5declarative-dev libkf5xmlgui-dev libkf5activities-dev build-essential libxcb-util-dev libkf5wayland-dev git gettext libkf5archive-dev libkf5notifications-dev libxcb-util0-dev
 #cd Latte-Dock/
 #./install.sh
+
+#install berry image viewer
 wget http://aseman.co/downloads/berry/1/berry_1.0.0-1-amd64
 sudo gdebi -n berry_1.0.0-1-amd64
 cd ~/Downloads/

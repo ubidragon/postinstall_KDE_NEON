@@ -11,38 +11,38 @@
 sudo apt-get update && sudo apt-get -y upgrade
 echo -e '\e[7mUpdate and Upgrade Complete.\e[0m'
 #-----install repos-------------------------------------------------------------------------------------
-cd ~/Scripts/KDE_Neon_PostInstallScript/installation/
+cd ~/Scripts/postinstall_KDE_NEON/installation/
 ./add_ppa.sh
 echo -e '\e[7mAdding PPAs Completed.\e[0m'
 
 #-----install flashless extras--------------------------------------------------------------------------
-cd ~/Scripts/KDE_Neon_PostInstallScript/installation/
+cd ~/Scripts/postinstall_KDE_NEON/installation/
 ./flashless.sh
 echo -e '\e[7mFlashless Extras Completed.\e[0m'
 
 #-----install the easy stuff----------------------------------------------------------------------------
-cd ~/Scripts/KDE_Neon_PostInstallScript/installation/
+cd ~/Scripts/postinstall_KDE_NEON/installation/
 ./install_easy.sh
 echo -e '\e[7mInstalling Easy Packages Complete.\e[0m'
 
 #-----install the hard boiled stuff---------------------------------------------------------------------
-cd ~/Scripts/KDE_Neon_PostInstallScript/installation/
+cd ~/Scripts/postinstall_KDE_NEON/installation/
 ./install_hardboiled.sh
 echo -e '\e[7mInstalling of Hard Boiled Packages Complete.\e[0m'
 
 #-----install and setup realvnc-------------------------------------------------------------------------
-cd ~/Scripts/KDE_Neon_PostInstallScript/installation/
+cd ~/Scripts/postinstall_KDE_NEON/installation/
 ./realvnc_setup.sh
 echo -e '\e[7mInstalling and config of realvnc Complete.\e[0m'
 
 #-----install and setup realvnc-------------------------------------------------------------------------
-cd ~/Scripts/KDE_Neon_PostInstallScript/installation/
+cd ~/Scripts/postinstall_KDE_NEON/installation/
 ./mount_nas.sh
 echo -e '\e[7mNAS mounting Complete.\e[0m'
 
 
 #-----further setup--------------------------------------------------------------------------------------
-cd ~/Scripts/KDE_Neon_PostInstallScript/installation/
+cd ~/Scripts/postinstall_KDE_NEON/installation/
 ./further_setup.sh
 echo -e '\e[7mFurther Setup Complete.\e[0m'
 echo -e ''
