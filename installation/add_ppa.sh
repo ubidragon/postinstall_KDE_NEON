@@ -39,6 +39,8 @@ sudo add-apt-repository -y ppa:noobslab/apps
 sudo add-apt-repository -y ppa:teejee2008/ppa
 #Java
 sudo add-apt-repository -y ppa:nilarimogard/webupd8
+#F.lux
+sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
 #Sublime Text 3
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 #Brackets
@@ -51,6 +53,8 @@ sudo add-apt-repository -y "deb [arch=amd64] https://download.docker.com/linux/u
 sudo add-apt-repository ppa:paskal-07/softethervpn
 #Virtualbox
 sudo echo "deb https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" >> /etc/apt/sources.list
+sudo echo "deb https://www.rememeberthemilk.com/download/linux/debian jessie main" >> /etc/apt/sources.list
+sudo echo "deb https://apt.insynchq.com/ubuntu $(lsb_release -sc) non-free contrib" >> /etc/apt/sources.list
 
 #Refresh package manager
 sudo pkcon refresh
