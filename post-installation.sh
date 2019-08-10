@@ -2,13 +2,13 @@
 # -*- Mode: sh; coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
 #
 # Author:
-#   bi1a1y
+#   Ubidragon
 #
 # Description:
 #   A post-installation bash script KDE Neon
 
 #update and upgrade
-sudo apt-get update && sudo apt-get -y upgrade
+sudo pkcon refresh && sudo pkcon upgrade -y
 echo -e '\e[7mUpdate and Upgrade Complete.\e[0m'
 #-----install repos-------------------------------------------------------------------------------------
 cd ~/Scripts/postinstall_KDE_NEON/installation/
@@ -30,17 +30,6 @@ cd ~/Scripts/postinstall_KDE_NEON/installation/
 ./install_hardboiled.sh
 echo -e '\e[7mInstalling of Hard Boiled Packages Complete.\e[0m'
 
-#-----install and setup realvnc-------------------------------------------------------------------------
-cd ~/Scripts/postinstall_KDE_NEON/installation/
-./realvnc_setup.sh
-echo -e '\e[7mInstalling and config of realvnc Complete.\e[0m'
-
-#-----install and setup realvnc-------------------------------------------------------------------------
-cd ~/Scripts/postinstall_KDE_NEON/installation/
-./mount_nas.sh
-echo -e '\e[7mNAS mounting Complete.\e[0m'
-
-
 #-----further setup--------------------------------------------------------------------------------------
 cd ~/Scripts/postinstall_KDE_NEON/installation/
 ./further_setup.sh
@@ -50,8 +39,8 @@ echo -e ''
 echo -e ''
 echo -e ''
 echo -e ''
-echo -e '\e[7mNOTE1: RealVNC Still needs user to login to complete setup.\e[0m'
 echo -e '\e[7mNOTE2: pip install classifier may have failed try command again after restarting the machine.\e[0m'
+echo -e 'Post Installation Complete'
 
 
 

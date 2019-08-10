@@ -8,13 +8,13 @@
 #   Install the easy packages
 
 cd ~
-sudo apt-get install -yy htop gdebi synaptic hunspell-en-gb exfat-fuse grsync bleachbit gufw chromium-browser openssh-server pyrenamer metamorphose2 rclone-browser atom stream2chromecast gimp gimp-plugin-registry gimp-gmic gparted texmaker lightzone stellarium simplescreenrecorder playonlinux curl zip y-ppa-manager vlc unzip unrar veracrypt texmaker peek neofetch filezilla ffmpeg handbrake grub-customizer qbittorrent python-pip openvpn kio-gdrive kdesudo fonts-inconsolata yakuake autokey-qt furiusisomount sublime-text-installer nfs-common
-
+sudo pkcon install -yy synaptic hunspell-en-gb exfat-fuse chromium-browser openssh-server gimp gparted curl zip vlc unzip unrar neofetch filezilla ffmpeg qbittorrent python-pip openvpn kio-gdrive kdesudo fonts-inconsolata yakuake furiusisomount sublime-text-installer nfs-common brackets docker libreoffice eclipse telegram-desktop eclipse byobu tmux tilix virtualbox-5.2 softether-client softether-server
 
 #sudo snap install writefull
 
 #check pip is up to date
 pip install --upgrade pip
 
+# Classifier https://github.com/bhrigu123/classifier
 pip install classifier
 cd ~/Scripts/KDE_Neon_PostInstallScript/

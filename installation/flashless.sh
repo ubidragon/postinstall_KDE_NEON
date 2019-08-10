@@ -59,15 +59,5 @@ else                               #Throw error for non Deb systems
 fi
 
 echo
-#DVD CSS Decoder install varies between pre 15.04 and 15.10 onwards
-#DVD CSS Decoder installation and configuration is done more "automatically" on Arch based systems. The following stuf is for Debian based systems only
-if [ -e /usr/share/doc/libdvdread4/install-css.sh ]; then
-  echo "Installing DVD CSS Decoder"
-  sudo /usr/share/doc/libdvdread4/install-css.sh
-else
-  echo "To install DVD CSS Decoder run: sudo apt install libdvd-pkg"
-fi
-
-echo
 echo "Flashless extras script complete :)"
 echo

@@ -7,24 +7,50 @@
 # Description:
 #   Add PPA's
 
+
+#------------------------------------------------------------------------------#
+#                            OFFICIAL UBUNTU REPOS                             #
+#------------------------------------------------------------------------------#
 sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe restricted multiverse"
-sudo apt-add-repository -y ppa:maarten-baert/simplescreenrecorder
-sudo add-apt-repository -y ppa:otto-kesselgulasch/lightzone
-sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
-sudo add-apt-repository -y ppa:unit193/encryption
-sudo add-apt-repository -y ppa:peek-developers/stable
+sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc)-security main universe restricted multiverse"
+sudo add-apt-repository -y "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc)-updates main universe restricted multiverse"
+
+# Adding keys
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys C6DAEA80
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 614C4B38
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1378B444
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 886DDD89
+sudo apt-key add oracle_vbox_2016.asc
+sudo apt-key add oracle_vbox.asc
+
+# Adding ppa software
+#Slimbook
+sudo add-apt-repository -y ppa:slimbook/slimbook
+#Neofetch
 sudo add-apt-repository -y ppa:dawidd0811/neofetch
-sudo add-apt-repository -y ppa:webupd8team/y-ppa-manager
-sudo add-apt-repository -y ppa:nilarimogard/webupd8
-sudo add-apt-repository -y ppa:webupd8team/atom
+#Gimp
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
-sudo add-apt-repository -y ppa:danielrichter2007/grub-customizer
+#QBittoeent
 sudo add-apt-repository -y ppa:qbittorrent-team/qbittorrent-stable
-sudo add-apt-repository -y ppa:docky-core/stable
+#Popurri, Java 6, Java 7
 sudo add-apt-repository -y ppa:noobslab/apps
+#TimeShift
 sudo add-apt-repository -y ppa:teejee2008/ppa
-#sudo apt-add-repository -y ppa:graphics-drivers/ppa
+#Java
+sudo add-apt-repository -y ppa:nilarimogard/webupd8
+#Sublime Text 3
 sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+#Brackets
+sudo add-apt-repository -y ppa:webupd8team/brackets
+#LibreOffice
+sudo add-apt-repository -y ppa:libreoffice/ppa
+#Docker
+sudo add-apt-repository -y "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+#SoftEther (vpn)
+sudo add-apt-repository ppa:paskal-07/softethervpn
+#Virtualbox
+sudo echo "deb https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" >> /etc/apt/sources.list
 
-
-sudo apt-get update
+#Refresh package manager
+sudo pkcon refresh

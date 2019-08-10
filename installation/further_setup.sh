@@ -39,7 +39,7 @@ mkdir -p -v ~/.local/share/kservices5/ServiceMenus
 ln -s  ~/Scripts/KDE_Neon_PostInstallScript/scripts/root_dolphin.desktop ~/.local/share/kservices5/ServiceMenus/
 
 #enable numlock before login
-#sudo cp ~/KDE_Neon_PostInstallScript/scripts/sddm.conf /etc/
+sudo cp ~/KDE_Neon_PostInstallScript/scripts/sddm.conf /etc/
 
 
 
