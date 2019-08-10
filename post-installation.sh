@@ -8,7 +8,7 @@
 #   A post-installation bash script KDE Neon
 
 #update and upgrade
-sudo pkcon refresh && sudo pkcon upgrade -y
+sudo pkcon refresh && sudo pkcon update -y
 echo -e '\e[7mUpdate and Upgrade Complete.\e[0m'
 #-----install repos-------------------------------------------------------------------------------------
 cd ~/Scripts/postinstall_KDE_NEON/installation/
