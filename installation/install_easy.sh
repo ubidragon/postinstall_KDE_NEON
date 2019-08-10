@@ -8,7 +8,7 @@
 #   Install the easy packages
 
 cd ~
-sudo pkcon install -yy synaptic hunspell-en-gb exfat-fuse chromium-browser openssh-server gimp gparted curl zip vlc unzip unrar neofetch filezilla ffmpeg qbittorrent python-pip openvpn kio-gdrive kdesudo fonts-inconsolata yakuake furiusisomount sublime-text-installer nfs-common brackets docker libreoffice eclipse telegram-desktop eclipse byobu tmux tilix virtualbox-5.2 softether-client softether-server flux insync rememberthemilk
+sudo pkcon install -yy synaptic hunspell-en-gb exfat-fuse chromium-browser openssh-server gimp gparted curl zip vlc unzip unrar neofetch filezilla ffmpeg qbittorrent python-pip openvpn kio-gdrive kdesudo fonts-inconsolata yakuake furiusisomount sublime-text-installer nfs-common brackets docker libreoffice eclipse telegram-desktop eclipse byobu tmux tilix virtualbox-5.2 softether-client softether-server flux insync rememberthemilk thunderbird zenmap
 
 #sudo snap install writefull
 
