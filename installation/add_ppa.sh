@@ -21,8 +21,9 @@ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 614C4B38
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1378B444
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
 sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 886DDD89
-sudo apt-key add oracle_vbox_2016.asc
-sudo apt-key add oracle_vbox.asc
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 0EBFCD88
+#sudo apt-key add oracle_vbox_2016.asc
+#sudo apt-key add oracle_vbox.asc
 
 # Adding ppa software
 #Slimbook
