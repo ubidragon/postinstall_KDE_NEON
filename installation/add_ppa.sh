@@ -43,7 +43,7 @@ sudo add-apt-repository -y ppa:nilarimogard/webupd8
 #F.lux
 sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
 #Sublime Text 3
-sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+#sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
 #Brackets
 sudo add-apt-repository -y ppa:webupd8team/brackets
 #LibreOffice
