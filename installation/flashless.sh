@@ -12,21 +12,21 @@ if [ "$(command -v apt)" ]; then       #Is this an Ubuntu / Debian based distro?
   echo
   
   echo "Updating repositories"
-  sudo apt update
+  sudo pkcon refresh
   echo 
   
   if [[ $(pgrep kwin) != "" ]]; then   #Different set of packages are needed for KDE based systems
     echo "Installing Restricted Extras for KDE based system"
-    sudo apt install lame unrar gstreamer1.0-fluendo-mp3 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-fluendo-mp3 libdvdread4 libk3b6-extracodecs  oxideqt-codecs-extra libavcodec-extra libavcodec-ffmpeg-extra56 libk3b6-extracodecs
+    sudo pkcon install lame unrar gstreamer1.0-fluendo-mp3 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-fluendo-mp3 libdvdread4 libk3b6-extracodecs  oxideqt-codecs-extra libavcodec-extra libavcodec-ffmpeg-extra56 libk3b6-extracodecs
   else
     echo "Installing Restricted Extras"
-    sudo apt install lame unrar gstreamer1.0-fluendo-mp3 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-fluendo-mp3 libdvdread4 libk3b6-extracodecs  oxideqt-codecs-extra libavcodec-extra libavcodec-ffmpeg-extra56
+    sudo pkcon install lame unrar gstreamer1.0-fluendo-mp3 gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-fluendo-mp3 libdvdread4 libk3b6-extracodecs  oxideqt-codecs-extra libavcodec-extra libavcodec-ffmpeg-extra56
   fi
   
   #Optional install of Microsoft fonts
   if [[ $Fonts == "y" ]] || [[ $Fonts == "Y" ]]; then
     echo "Installing Microsoft Fonts"
-    sudo apt install ttf-mscorefonts-installer
+    sudo pkcon install ttf-mscorefonts-installer
   fi
 
 elif [ "$(command -v pacman)" ];then    #Installing restricted extras for Arch based systems
