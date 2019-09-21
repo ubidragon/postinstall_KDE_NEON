@@ -2,7 +2,7 @@
 # -*- Mode: sh; coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
 #
 # Author:
-#   bi1a1y
+#   bi1a1y, ubidragon
 #
 # Description:
 #   Add PPA's
@@ -25,6 +25,7 @@ curl -fsSL https://typora.io/linux/public-key.asc | sudo apt-key add -
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 curl -fsSL https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 curl -fsSL http://repo.vivaldi.com/archive/linux_signing_key.pub | sudo apt-key add -
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
 #sudo apt-key add oracle_vbox_2016.asc
 #sudo apt-key add oracle_vbox.asc
 
@@ -68,6 +69,11 @@ sudo echo "deb https://www.rememeberthemilk.com/download/linux/debian jessie mai
 sudo echo "deb https://apt.insynchq.com/ubuntu $(lsb_release -sc) non-free contrib" >> /etc/apt/sources.list
 #Vivaldi
 sudo add-apt-repository 'deb http://repo.vivaldi.com/archive/deb/ stable main'
+#Balena Etcher 
+echo "deb https://deb.etcher.io stable etcher" | sudo tee /etc/apt/sources.list.d/balena-etcher.list
+
+
+
 
 #Refresh package manager
 sudo pkcon refresh

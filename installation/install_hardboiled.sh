@@ -2,8 +2,9 @@
 # -*- Mode: sh; coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
 #
 # Author:
-#   bi1a1y
+#   bi1a1y, ubidragon
 #
+# 
 # Description:
 #   A post-installation bash script KDE Neon
 
@@ -23,11 +24,6 @@ sudo dpkg -i gitkraken-amd64.deb
 cd ~/Descargas/
 rm -rf gitkraken
 
-#-----install etcher------------------------------------------------------------------------------------
-wget https://github.com/balena-io/etcher/releases/download/v1.5.53/balena-etcher-electron-1.5.53-linux-ia32.zip
-unzip balena-etcher-electron-1.5.53-linux-ia32.zip -d ~/Programs/Etcher/
-cd ~/Descargas/
-
 #-----install flameshot---------------------------------------------------------------------------------
 mkdir flameshot && cd flameshot
 wget https://github.com/lupoDharkael/flameshot/releases/download/v0.6.0/flameshot_0.6.0_bionic_x86_64.deb
@@ -37,6 +33,8 @@ rm -rf anydesk
 
 #-----config docker--------------------------------------------------------------------------------
 sudo usermod -aG docker $USER
+
+#-----GUI Portainer---------------------------------------------------------------------------------
 docker volume create portainer_data
 docker run -d -p 8000:8000 -p 9000:9000 --restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
 
@@ -70,6 +68,7 @@ rm -rf openforti
 #-----install oh_my_zsh--------------------------------------------------------------------------------
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 
+#-----install Kvantum----------------------------------------------------------------------------------
 unzip https://github.com/tsujan/Kvantum/archive/master.zip
 cd Kvantum-master
 sudo make install

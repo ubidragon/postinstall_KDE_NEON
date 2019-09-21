@@ -2,14 +2,14 @@
 # -*- Mode: sh; coding: utf-8; indent-tabs-mode: nil; tab-width: 4 -*-
 #
 # Author:
-#   bi1a1y
+#   bi1a1y, ubidragon
 #
 # Description:
 #   Install the easy packages
 
 cd ~
 sudo pkcon install -y hunspell-en-gb hunspell-es fonts-inconsolata libreoffice \ 
-exfat-fuse gparted furiusisomount nfs-common filelight htop \ 
+exfat-fuse gparted furiusisomount nfs-common filelight htop balena-etcher-electron \ 
 chromium-browser vivaldi-snapshot \ 
 vlc ffmpeg \ 
 brackets sublime-text-installer typora \ 
