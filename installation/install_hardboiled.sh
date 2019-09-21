@@ -73,3 +73,10 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 unzip https://github.com/tsujan/Kvantum/archive/master.zip
 cd Kvantum-master
 sudo make install
+
+#-----install ocs-url----------------------------------------------------------------------------------
+mkdir ocs && cd ocs
+wget https://dl.opendesktop.org/api/files/download/id/1530774600/s/9176c91728d072580279f000eb7723cc7a9ea065d9ca070b20e357f002bc9c40c8771ae8ab7072c5fc18cabfa931356676673eaceb4c0e185a6e886a18999718/t/1565462431/lt/download/ocs-url_3.1.0-0ubuntu1_amd64.deb
+sudo dpkg -i ocs-*.deb
+cd ~/Descargas/
+rm -rf ocs
