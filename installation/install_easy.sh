@@ -8,6 +8,7 @@
 #   Install the easy packages
 
 cd ~
+sudo pkcon refresh && sudo pkcon update -y
 sudo pkcon install -y hunspell-en-gb hunspell-es fonts-inconsolata libreoffice \
 exfat-fuse gparted furiusisomount nfs-common filelight htop balena-etcher-electron \
 chromium-browser vivaldi-snapshot \
@@ -17,8 +18,8 @@ pgadmin3 sqldeveloper \
 virtualbox-5.2 docker-ce docker-ce-cli containerd.io kubectl \
 zip unzip unrar neofetch filezilla \
 curl zenmap wireshark \
-gcc libx11 libxext qt5-base qt5-svg qt5-x11extras kwindowsystem qt5-tools make qmake \
-python-pip kio-gdrive apt-transport-https libnss3-tools\
+gcc libx11 libxext qt5-base qt5-svg qt5-x11extras kwindowsystem qt5-tools make qmake cmake libgtkglext1 libqt5keychain1 \
+python-pip kio-gdrive apt-transport-https libnss3-tools \
 yakuake byobu tmux tilix openssh-server x2goclient zsh \
 ca-certificates gnupg-agent software-properties-common \
 openvpn softether-client softether-server \
