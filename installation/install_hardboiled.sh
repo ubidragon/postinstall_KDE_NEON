@@ -9,23 +9,23 @@
 #   A post-installation bash script KDE Neon
 
 #-----install virtualbox--------------------------------------------------------------------------------
-sudo apt-get install -yy virtualbox
+#sudo apt-get install -yy virtualbox
 sudo adduser vm vboxusers
-cd ~/Scripts/KDE_Neon_PostInstallScript/
+#cd ~/Scripts/KDE_Neon_PostInstallScript/
 
 #-----download and install deb packages-----------------------------------------------------------------
 #mkdir -p -v ~/KDE_Neon_PostInstallScript/dls
 cd ~/Descargas/
 
 #-----install gitkraken---------------------------------------------------------------------------------
-mkdir gitkraken && cd gitkraken
+sudo mkdir gitkraken && cd gitkraken
 wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
 sudo dpkg -i gitkraken-amd64.deb
 cd ~/Descargas/
 rm -rf gitkraken
 
 #-----install flameshot---------------------------------------------------------------------------------
-mkdir flameshot && cd flameshot
+sudo mkdir flameshot && cd flameshot
 wget https://github.com/lupoDharkael/flameshot/releases/download/v0.6.0/flameshot_0.6.0_bionic_x86_64.deb
 sudo dpkg -i flameshot_*.deb
 cd ~/Descargas/
@@ -44,14 +44,14 @@ chmod +x minikube
 sudo install minikube /usr/local/bin
 
 #-----install Anydesk--------------------------------------------------------------------------------
-mkdir anydesk && cd anydesk
+sudo mkdir anydesk && cd anydesk
 wget https://download.anydesk.com/linux/anydesk_5.1.2-1_amd64.deb
 sudo dpkg -i anydesk*.deb
 cd ~/Descargas/
 rm -rf anydesk
 
 #-----install Autofirma--------------------------------------------------------------------------------
-mkdir autofirma && cd autofirma
+sudo mkdir autofirma && cd autofirma
 wget https://estaticos.redsara.es/comunes/autofirma/currentversion/AutoFirma_Linux.zip
 unzip AutoFirma_Linux.zip -d autofirma/
 sudo dpkg -i AutoFirma*.deb
@@ -59,7 +59,7 @@ cd ~/Descargas/
 rm -rf autofirma
 
 #-----install Openfortigui--------------------------------------------------------------------------------
-mkdir openforti && cd openforti
+sudo mkdir openforti && cd openforti
 wget https://apt.iteas.at/iteas/pool/main/o/openfortigui/openfortigui_0.8.0-1_amd64_bionic.deb
 sudo dpkg -i openfortigui*.deb
 cd ~/Descargas/

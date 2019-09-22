@@ -62,11 +62,11 @@ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/
 #SoftEther (vpn)
 sudo add-apt-repository ppa:paskal-07/softethervpn
 #Virtualbox
-sudo echo "deb https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" >> /etc/apt/sources.list
+echo "deb https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" | sudo tee -a /etc/apt/sources.list.d/virtualbox.list
 #Remember The Milk
-sudo echo "deb https://www.rememeberthemilk.com/download/linux/debian jessie main" >> /etc/apt/sources.list
+echo "deb https://www.rememeberthemilk.com/download/linux/debian jessie main" | sudo tee -a /etc/apt/sources.list.d/rtm.list
 #Insync
-sudo echo "deb https://apt.insynchq.com/ubuntu $(lsb_release -sc) non-free contrib" >> /etc/apt/sources.list
+echo "deb https://apt.insynchq.com/ubuntu $(lsb_release -sc) non-free contrib" | sudo tee -a /etc/apt/sources.list.d/insync.list
 #Vivaldi
 sudo add-apt-repository 'deb http://repo.vivaldi.com/archive/deb/ stable main'
 #Balena Etcher 
