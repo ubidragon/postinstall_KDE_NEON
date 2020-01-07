@@ -55,7 +55,7 @@ sudo add-apt-repository -y ppa:nathan-renniewaldock/flux
 #Sublime Text 3
 echo "deb http://ppa.launchpad.net/webupd8team/sublime-text-3/ubuntu artful main "| sudo tee -a /etc/apt/sources.list.d/sublimetext3.list
 #Brackets
-sudo add-apt-repository -y ppa:webupd8team/brackets
+#sudo add-apt-repository -y ppa:webupd8team/brackets
 #Typora
 sudo add-apt-repository -y 'deb https://typora.io/linux ./'
 #LibreOffice
@@ -67,18 +67,13 @@ echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/
 #SoftEther (vpn)
 sudo add-apt-repository -y ppa:paskal-07/softethervpn
 #Virtualbox
-echo "deb https://download.virtualbox.org/virtualbox/ubuntu $(lsb_release -sc) contrib" | sudo tee -a /etc/apt/sources.list.d/virtualbox.list
-#Remember The Milk
-echo "deb https://www.rememeberthemilk.com/download/linux/debian jessie main" | sudo tee -a /etc/apt/sources.list.d/rtm.list
+echo "deb https://download.virtualbox.org/virtualbox/debian $(lsb_release -sc) contrib" | sudo tee -a /etc/apt/sources.list.d/virtualbox.list
 #Insync
 echo "deb https://apt.insynchq.com/ubuntu $(lsb_release -sc) non-free contrib" | sudo tee -a /etc/apt/sources.list.d/insync.list
 #Vivaldi
 sudo add-apt-repository 'deb http://repo.vivaldi.com/archive/deb/ stable main'
 #Balena Etcher 
 echo "deb https://deb.etcher.io stable etcher" | sudo tee /etc/apt/sources.list.d/balena-etcher.list
-
-
-
 
 #Refresh package manager
 sudo pkcon refresh

@@ -13,7 +13,7 @@ sudo pkcon install -y hunspell-en-gb hunspell-es fonts-inconsolata libreoffice \
 exfat-fuse gparted furiusisomount nfs-common filelight htop balena-etcher-electron \
 chromium-browser vivaldi-snapshot \
 vlc ffmpeg \
-brackets sublime-text-installer typora \
+sublime-text-installer typora \
 pgadmin3 sqldeveloper \
 virtualbox-5.2 docker-ce docker-ce-cli containerd.io kubectl \
 zip unzip unrar neofetch filezilla \
@@ -26,7 +26,7 @@ openvpn softether-client softether-server \
 insync rememberthemilk thunderbird qbittorrent flux \
 kdesudo kate kdiff3 konsole remmina meld kdesvn
 
-#sudo snap install writefull
+sudo snap install postman asciinema termius-app
 
 #check pip is up to date
 pip install --upgrade pip

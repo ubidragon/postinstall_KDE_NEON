@@ -8,10 +8,6 @@
 #   Further Setup
 cd ~/Scripts/KDE_Neon_PostInstallScript/
 
-#download some extra fonts
-#cd ~/KDE_Neon_PostInstallScript/other/
-#./download_consolas.sh
-
 #setup neofetch
 mkdir -p -v ~/.config/neofetch/
 ln -s ~/Scripts/KDE_Neon_PostInstallScript/scripts/config ~/.config/neofetch/

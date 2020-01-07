@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/Downloads
+cd ~/Descargas
 
 #Compressed
 classifier -st .zip .rar .r0* .r1* .arj .gz .sit .sitx .sea .xz .ace .bz2 .7z .iso .tar -sf "Compressed"
